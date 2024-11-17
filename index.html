@@ -5,6 +5,9 @@
     <meta name="viewport" content="width-device-width, initial-scale-1.0">
     <title>Jeanne's World</title>
     <link href="CSS/style.css" rel="stylesheet">
+    <script src="JS/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/64ce0557c1.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 <div id="header">
@@ -35,30 +38,33 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About me</h1>
-                <p>ADD TEXT ABOUT ME!!!!!!! <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur dignissimos
-                    dolor earum eligendi facilis iste non obcaecati quis, quo rem, repellat sit velit? Ducimus ipsam laborum perferendis
-                    quam veritatis!</p>
+                <p>"Welcome to my portfolio! I’m Jeanne, a passionate web developer with a knack for creating visually stunning and user-friendly websites.
+                    Whether it’s crafting sleek designs with HTML and CSS or building dynamic functionalities using JavaScript,
+                    I thrive on turning ideas into interactive digital experiences. I’m constantly learning and growing in web development,
+                    with a focus on modern frameworks and responsive design to ensure accessibility on all devices. Outside of coding,
+                    I explore DevOps and cybersecurity, blending creativity and security to deliver well-rounded solutions.
+                    Let’s connect and bring your next project to life!"</p>
                 <div class="tab-titles">
 <!--                    /*clicking feature,(onclick)*/-->
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links" onclick="opentab('experience')" >Experience</p>
                     <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
-                <div class="tab-contents active-tab">
+                <div class="tab-contents active-tab" id="skills">
                     <ul>
                         <li><span>Web Development</span><br>Designing web applications</li>
                         <li><span>Network Engineering</span><br>Building secure networks</li>
                         <li><span>Electrical Engineering</span><br>Telecommunications </li>
                     </ul>
                 </div>
-                <div class="tab-contents">
+                <div class="tab-contents" id="experience">
                     <ul>
                         <li><span>2024-current</span><br>Designing web applications</li>
                         <li><span>2024-current</span><br>Building secure networks</li>
                         <li><span>2022-current</span><br>Telecommunications  </li>
                     </ul>
                 </div>
-                <div class="tab-contents">
+                <div class="tab-contents" id="education">
                     <ul>
                         <li><span>2022-current</span><br>Electrical and Electronic Engineering,University of Nairobi</li>
                         <li><span>2018-2022</span><br>Kenya High School</li>
@@ -67,6 +73,97 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+<!--Services section-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web design</h2>
+                <p>I design web applications best suited to cater for your needs.</p>
+                <a href="#">Learn more</a>
+            </div>
+             <div>
+                 <i class="fa-solid fa-server"></i>
+                <h2>Network design</h2>
+                <p>I design networks best suited to cater for your needs.</p>
+                <a href="#">Learn more</a>
+            </div>
+             <div>
+                 <i class="fa-solid fa-toolbox"></i>
+                <h2>Electrical engineering</h2>
+                <p>I design electrical applications best suited to cater for your needs.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="ASSETS/images-phone app.jpg" alt="Work 1">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to other talented people around the world.<br>Download it from play store</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="ASSETS/Mama mboga.jpg" alt="Work 1">
+                 <div class="layer">
+                    <h3>Mama Mboga App</h3>
+                    <p>The app brings your kibanda vegetables lady closer than ever before.<br>Download it from play store</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="ASSETS/images-matatu 2.jpg" alt="Work 1">
+                 <div class="layer">
+                    <h3>Matatu App</h3>
+                    <p>Ordering your seat in your favourite Matatu as never been easier.<br>Download it from play store</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!--Contact form-->
+<div id="contact">
+    <div class="container" >
+<!--        two columns:Contact info and contact form-->
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-regular fa-envelope"></i>Jeanneawuor83@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>(+254)796452116</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/jeeeaaannee"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/spaghetti446"><i class="fa-brands fa-square-x-twitter"></i></i></a>
+                    <a href="https://instagram.com/jeeeaaannee"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/jeeeaaannee"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+<!--                downloadable file attachment-->
+                <a href="PUBLIC/Jeanne%20-%20CV(1).docx" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Add your name" required>
+                    <input type="email" name="Email" placeholder="Add your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @Jeanne.Made with reference to<i class="fa-solid fa-heart"></i> Easy Tutorials</p>
     </div>
 </div>
 </body>
